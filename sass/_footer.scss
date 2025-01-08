@@ -10,48 +10,45 @@ footer{
         width: 100%;
         @include flex(row, center, space-between);
         .logo{
-                padding-bottom: 2rem;
-                img{
-                    width: 25rem;
-                }
-
+            padding-bottom: 2rem;
+            img{
+                width: 25rem;
             }
 
-            .social-area{
-                padding-top: 2rem;
-                border-left: 1px solid $color-button;
-                padding-left: 42rem;
+        }
+        .social-area{
+            padding-top: 2rem;
+            padding-left: 42rem;
+            display: flex;
+            align-items: center;
+            ul{
                 display: flex;
-                align-items: center;
-                ul{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    
-                    li{
-                        @include flex(row, center, flex-start);
-                        &:not(:last-child){
-                        margin-bottom: 3rem;
-                    }
-                    img{
-                        width: 3rem;
-                        margin-right: 2rem
+                flex-direction: column;
+                justify-content: center;   
+                li{
+                    @include flex(row, center, flex-start);
+                    &:not(:last-child){
+                    margin-bottom: 3rem;
+                }
+                img{
+                    width: 3rem;
+                    margin-right: 2rem
                         
-                    }
-                    a{
-                        font-family: 'Poppins', sans-serif;
-                        font-size: 1.6rem;
-                        font-weight: 500;
-                        color: $color-button;
-                        opacity: 0.7;
-                        &:hover{
-                            opacity: 0.5;
-                        }
+                }
+                a{
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    color: $color-button;
+                    opacity: 0.7;
+                    &:hover{
+                        opacity: 0.5;
                     }
                 }
             }
-        }        
-    }
+        }
+    }        
+}
     span{
         font-family: 'Poppins', sans-serif;
         color: $color-button;
@@ -59,5 +56,25 @@ footer{
         font-size: 1.6rem;
         font-weight: 500;
     }
-    
+    @include responsive(890px){
+        margin-top: -8rem;
+        .container{
+            .info-area{
+                @include flex(column, center, center);
+                .social-area{
+                    ul{
+                        margin: 2rem 0;
+                        @include flex(row, center, center);
+                        li{
+                            margin-bottom: 0;
+                            &:not(:last-child){
+                                margin-right: 2rem;
+                            }
+                        }
+                    }
+                    padding: 0;
+                }
+            }            
+        }
+    }
 }

@@ -55,6 +55,7 @@ header{
                     background: url(../img/icon-user.png) no-repeat center center;
                     width: 2.4rem;
                     height: 2.4rem;
+                    background-size: cover;
                 }
                 &:hover>.ico{
                     background: url(../img/icon-user-hover.png) no-repeat center center;
@@ -64,5 +65,34 @@ header{
                 }
             }
         }
+        .menu{
+            display: none;
+            background-image: url("../img/menu.png");
+            background-size: cover;
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+    }
+
+    @include responsive(990px){
+        height: 6rem;
+        nav{
+            display: none;
+        }
+        .btn{
+            @include flex(row, center, center);
+            margin-left: 0;
+            .btn-primary{
+                font-size: 1.4rem;
+                line-height: 4rem;
+                padding: 0 3rem;
+                margin-right: 1rem;
+            }
+            .menu{
+                margin-left: 4rem;
+                display: block;
+            }
+        }
+
     }
 }
