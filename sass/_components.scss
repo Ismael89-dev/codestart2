@@ -1,0 +1,36 @@
+.icon{
+    @include flex(row, center, center);
+    width: 7rem;
+    height: 7rem;
+    background: linear-gradient(180deg, #35CAE2 0%, rgba(4, 89, 102, 0.4) 100%);
+    border-radius: 5.5px;
+    img{
+        width: 4rem;
+    }
+}
+.card-depoimentos{
+    width: 100%;
+    max-width: 38.4rem;
+    height: 20.9rem;
+    background-color: rgba( 241, 240, 245, 0.55 );
+    border-radius: 8px;
+    padding: 3.7rem 3.2rem 2.3rem 3.2rem;
+    .user{
+        @include flex(row, center, space-between); 
+        margin-bottom: 2.1rem;
+        strong{
+            display: block;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 112%;
+            letter-spacing: -1px;
+            color: $gray-300;
+        }
+    }
+    p{
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: $gray-300;
+    }
+}

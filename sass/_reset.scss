@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+a{
+    color: rgba(0, 0, 0, 0.7);
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+html{
+    font-size: 62.5%;
+    @include responsive(990px){
+        font-size: 5%;
+    }
+    scroll-behavior: smooth;
+}
+
+html,
+body{
+    overflow-x: hidden;
+}
+
+button{
+    cursor: pointer;
+}

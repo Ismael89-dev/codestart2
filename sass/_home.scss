@@ -1,0 +1,142 @@
+.s-hero{
+    width: 100%;
+    height: 78.6rem;
+    padding-top: 15rem;
+    .container{
+        @include flex(row, center, space-between);
+    }
+
+    .text-area{
+        width: 100%;
+        max-width: 50rem;
+        span{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $brand-blue;
+            
+        }
+        h1{
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .btn-primary{
+            margin-left: 15rem;
+            &:hover{
+                color: $brand-blue;
+            }
+        }
+    }
+    .ilustration{
+        img{
+            max-width: 40rem;
+        }
+    }
+    @include responsive(990px){
+
+    }
+}
+.s-advantages{
+    width: 100%;
+    height: 70rem;
+    background-color: $gray-300;
+    padding-top: 8rem;
+    .text-area{
+        @include flex(row, center, space-between);
+    }
+    .ilustration{
+        padding-top: 4rem;
+        width: 100%;
+        max-width: 60rem;
+    }
+    .advantages{
+        width: 100%;
+        max-width: 60rem;
+        ul{
+            li{
+                @include flex(row, center, flex-start);
+                border-bottom: 1px solid rgba(225, 224, 231, 0.9);
+                padding: 2rem 0rem;
+                &:first-child{
+                    padding-top: 0;
+                }
+                .text{
+                    margin-left: 3rem;
+                    p{
+                        font-size: 1.6rem;
+                        color: $color-button;
+                        opacity: 0.8;
+                        max-width: 40rem;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(990px){
+       .ilustration{
+            img{
+                height: 70rem;
+            }
+       } 
+    }
+}
+.s-depoimentos{
+    padding-top: 13.4rem;
+    .container{
+
+    }
+    .slide-depoimentos{
+        @include flex(row, center, space-between);
+        margin-top: 8rem;
+        .top{
+            @include flex(row, flex-end, space-between);
+            margin-bottom: 4rem;
+            h2{
+                span{
+                    display: block;
+                    color: $gray-200;
+                    margin-bottom: 1.4rem;
+                }
+            }
+        }
+    }
+
+}
+
+.s-forsale{
+    width: 100%;
+    padding-top: 12rem;
+    .top{
+        h2{
+            color: rgba(0, 0, 0, 0.8);                        
+        }
+    }
+    .text-area{
+        @include flex(row, center, center);
+        .area-text{
+            width: 100%;
+            max-width: 70rem;
+            ul{         
+                li{
+                    @include flex(row, center, flex-start);
+                    border-bottom: 1px solid rgba(105, 105, 105, 0.9);
+                    padding: 2rem 0rem;
+                    &:first-child{
+                        padding-top: 0;
+                    }
+                    h3{
+                        color: $gray-300;
+                        margin-left: 3rem;
+                    }
+                }
+            }
+        }
+        .ilustration{
+            height: 56.7rem;
+            width: 100%;
+            max-width: 70rem;
+            margin-right: -10rem;
+        }
+    }
+}
+
