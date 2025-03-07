@@ -228,6 +228,15 @@
             }
         }
     }
+    @include responsive(460px){
+        .text-area{
+            .ilustration{
+                position: relative;
+                bottom: -5rem;
+                top: -2rem;
+            }
+        }
+    }
 }
 
 // Mais um bug com os commits

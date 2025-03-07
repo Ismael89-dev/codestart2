@@ -88,10 +88,13 @@ header{
                 padding: 0 3rem;
                 margin-right: 1rem;
             }
-            .menu{
-                margin-left: 4rem;
-                display: block;
+            a{
+                display: none;
             }
+            .menu{
+                display: block;
+                margin-left: 4rem; 
+            }            
         }
 
     }
